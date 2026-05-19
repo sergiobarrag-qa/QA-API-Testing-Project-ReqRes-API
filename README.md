@@ -104,11 +104,6 @@ Documentación QA
 Uso de Postman
 Pensamiento analítico
 
-🔗 Evidencia del proyecto
-
-Repositorio GitHub:
-
-https://github.com/sergiobarrag-qa/qa-api-testing-public-api
 
 👨‍💻 Autor
 
