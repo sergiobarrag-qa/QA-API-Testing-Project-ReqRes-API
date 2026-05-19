@@ -25,6 +25,7 @@ GitHub
 ✅ GET – Obtener lista de usuarios
 Endpoint:
 GET https://reqres.in/api/users?page=2
+https://github.com/sergiobarrag-qa/QA-API-Testing-Project-ReqRes-API/blob/f9bb4d6e026568d8f91cf17c24de945f30ac674a/get-users-success.png
 Validaciones realizadas:
 Status code 200 OK
 Tiempo de respuesta aceptable
