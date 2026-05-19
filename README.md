@@ -24,6 +24,7 @@ GitHub
 📂 Casos de prueba realizados
 ✅ GET – Obtener lista de usuarios
 Endpoint:
+get-users-success.png
 GET https://reqres.in/api/users?page=2
 Validaciones realizadas:
 Status code 200 OK
