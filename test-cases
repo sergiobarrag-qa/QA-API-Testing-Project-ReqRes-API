@@ -1,1 +1,35 @@
 
+# API Test Cases — ReqRes API
+
+| ID | Escenario | Método | Resultado Esperado | Estado |
+|---|---|---|---|---|
+| TC-01 | Obtener lista de usuarios | GET | API responde 200 OK y retorna usuarios | PASSED |
+| TC-02 | Consultar usuarios sin API Key | GET | API responde 401 Unauthorized | PASSED |
+| TC-03 | Crear usuario válido | POST | API responde 201 Created | PASSED |
+| TC-04 | Crear usuario con body vacío | POST | API debería rechazar request | FAILED |
+| TC-05 | Crear usuario con tipos inválidos | POST | API debería validar tipos de datos | FAILED |
+| TC-06 | Consultar usuario inexistente | GET | API responde 404 Not Found | PASSED |
+
+---
+
+# Cobertura de pruebas
+
+## Validaciones realizadas
+- Status Codes
+- JSON Response
+- API Authentication
+- Error Handling
+- Invalid Inputs
+- Backend Validation
+- Response Time
+
+---
+
+# Resultado general
+
+| Tipo de prueba | Resultado |
+|---|---|
+| Happy Path Testing | Correcto |
+| Negative Testing | Se detectaron validaciones débiles |
+| Error Handling | Correcto |
+| Authentication | Correcto |
