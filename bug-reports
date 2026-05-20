@@ -1,0 +1,70 @@
+# API Bug Reports — ReqRes API
+
+---
+
+# BUG-01
+
+## Título
+La API permite crear usuarios con body vacío
+
+## Severidad
+Alta
+
+## Prioridad
+Alta
+
+## Pasos para reproducir
+1. Enviar POST a:
+   https://reqres.in/api/users
+
+2. Enviar body:
+```json
+{}
+```
+
+3. Presionar Send
+
+## Resultado esperado
+La API debería validar campos obligatorios y responder 400 Bad Request.
+
+## Resultado actual
+La API responde 201 Created y genera un usuario vacío.
+
+## Impacto
+Puede generar registros incompletos y afectar integridad de datos.
+
+---
+
+# BUG-02
+
+## Título
+La API acepta tipos de datos inválidos
+
+## Severidad
+Alta
+
+## Prioridad
+Alta
+
+## Pasos para reproducir
+1. Enviar POST a:
+   https://reqres.in/api/users
+
+2. Enviar body:
+```json
+{
+  "name": 12345,
+  "job": true
+}
+```
+
+3. Presionar Send
+
+## Resultado esperado
+La API debería validar tipos de datos y rechazar el request.
+
+## Resultado actual
+La API responde 201 Created y acepta datos inválidos.
+
+## Impacto
+Puede generar inconsistencias y corrupción de datos en backend.
