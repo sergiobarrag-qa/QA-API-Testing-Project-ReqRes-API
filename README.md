@@ -1,6 +1,6 @@
 QA API Testing Project – ReqRes API
 
-📌 Descripción del Proyecto
+## Descripción del Proyecto
 
 Proyecto de pruebas manuales enfocado en validación de APIs REST utilizando Postman y la API pública de ReqRes.
 
@@ -15,14 +15,15 @@ Comportamiento de respuestas de la API
 
 El objetivo fue simular escenarios reales de pruebas QA sobre servicios backend.
 
-🛠 Herramientas utilizadas
+## Herramientas utilizadas
 Postman
 ReqRes API
 JSON
 HTTP Methods
 GitHub
-📂 Casos de prueba realizados
-✅ GET – Obtener lista de usuarios
+Casos de prueba realizados
+
+## GET – Obtener lista de usuarios
 Endpoint:
 GET https://reqres.in/api/users?page=2
 https://github.com/sergiobarrag-qa/QA-API-Testing-Project-ReqRes-API/blob/f9bb4d6e026568d8f91cf17c24de945f30ac674a/get-users-success.png
@@ -33,9 +34,9 @@ Validación de estructura JSON
 Verificación de usuarios retornados
 Resultado:
 
-✅ Prueba exitosa
+## Prueba exitosa
 
-✅ POST – Crear usuario
+## POST – Crear usuario
 Endpoint:
 POST https://reqres.in/api/users
 Body:
@@ -50,9 +51,9 @@ Validación de fecha de creación
 Verificación de datos enviados
 Resultado:
 
-✅ Usuario creado correctamente
+## Usuario creado correctamente
 
-⚠️ POST – Envío de Body vacío
+## POST – Envío de Body vacío
 Endpoint:
 POST https://reqres.in/api/users
 Body:
@@ -62,13 +63,13 @@ Comportamiento de la API con body vacío
 Validación de respuesta del servidor
 Resultado observado:
 
-⚠️ La API permite crear registros sin validar campos obligatorios.
+## La API permite crear registros sin validar campos obligatorios.
 
 Impacto:
 
 Puede generar registros incompletos y afectar integridad de datos.
 
-⚠️ POST – Tipos de datos inválidos
+## POST – Tipos de datos inválidos
 Endpoint:
 POST https://reqres.in/api/users
 Body:
@@ -88,14 +89,14 @@ Impacto:
 
 Riesgo de inconsistencias y datos corruptos en el sistema.
 
-🐞 Bugs identificados
+## Bugs identificados
 
 ID	Descripción	Severidad
 BUG-01	La API permite crear usuarios con body vacío	Media
 BUG-02	La API acepta tipos de datos inválidos	Alta
 BUG-03	Falta validación estricta de campos obligatorios	Alta
 
-📊 Habilidades aplicadas
+## Habilidades aplicadas
 
 Diseño de pruebas API
 Validación de respuestas JSON
@@ -106,7 +107,7 @@ Uso de Postman
 Pensamiento analítico
 
 
-👨‍💻 Autor
+## Autor
 
 Sergio Andrés Barragán Caro
 QA Tester Junior | Manual Testing | API Testing | Postman | Jira
